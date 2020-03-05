@@ -4,94 +4,94 @@
 
             <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
                 <!-- Brand -->
-                <a class="navbar-brand text-center" routerLink="#"><img style="width: 75%; text-align: center;" src="../../assets/images/lgoo.png" alt=""></a>
+                <a class="navbar-brand text-center" routerLink="dashboard"><img style="width: 75%; text-align: center;" src="../../assets/images/lgoo.png" alt=""></a>
               
                 <!-- Links -->
                 <ul class="navbar-nav mt-2">
                   <li class="nav-item">
-                    <a class="nav-link" routerLink="#"><i class="fa fa-tachometer"></i> Dashboard</a>
+                    <a class="nav-link" routerLink="dashboard"><i class="fa fa-tachometer"></i> Dashboard</a>
                   </li>
                   <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" routerLink="#" id="navbardrop" data-toggle="dropdown"><i class="fa fa-users"></i> Applicant Details</a>
+                    <a class="nav-link dropdown-toggle" id="navbardrop" data-toggle="dropdown"><i class="fa fa-users"></i> Applicant Details</a>
                     <div class="dropdown-menu">
                         <ul>
-                        <li><a class="dropdown-item" routerLink="#">Applicant List</a></li>
-                        <li><a class="dropdown-item" routerLink="#">New Applicant</a></li>
-                        <li><a class="dropdown-item" routerLink="#">Applicant History</a></li>
+                        <li><a class="dropdown-item" routerLink="applicantlist">Applicant List</a></li>
+                        <li><a class="dropdown-item" routerLink="newapplicant">New Applicant</a></li>
+                        <li><a class="dropdown-item" routerLink="applicanthistory">Applicant History</a></li>
                     </ul>
                       </div>
                   </li>
               
                   <!-- Dropdown -->
                   <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" routerLink="#" id="navbardrop" data-toggle="dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbardrop" data-toggle="dropdown">
                         <i class="fa fa-check"></i> My Verification
                     </a>
                     <div class="dropdown-menu">
                      
                       <ul>
-                        <li><a  class="dropdown-item" routerLink="#">Field Verification Status</a></li>
-                        <li><a  class="dropdown-item" routerLink="#">Doc Verification List</a></li> 
-                        <li><a  class="dropdown-item" routerLink="#">FOE Case Allocation List</a></li> 
-                        <li><a  class="dropdown-item" routerLink="#">Unallocated Cases</a></li> 
-                        <li><a  class="dropdown-item" routerLink="#">Inactive Cases</a></li> 
-                        <li><a  class="dropdown-item" routerLink="#">In Cases</a></li> 
-                        <li><a  class="dropdown-item" routerLink="#">Out Cases</a></li> 
-                        <li><a  class="dropdown-item" routerLink="#">Rejected Cases</a></li> 
+                        <li><a  class="dropdown-item" routerLink="fieldverificationstatus">Field Verification Status</a></li>
+                        <li><a  class="dropdown-item" routerLink="docverificationlist">Doc Verification List</a></li> 
+                        <li><a  class="dropdown-item" routerLink="foecaseallocationlist">FOE Case Allocation List</a></li> 
+                        <li><a  class="dropdown-item" routerLink="unallocatedcase">Unallocated Cases</a></li> 
+                        <li><a  class="dropdown-item" routerLink="inactivecase">Inactive Cases</a></li> 
+                        <li><a  class="dropdown-item" routerLink="incase">In Cases</a></li> 
+                        <li><a  class="dropdown-item" routerLink="outcase">Out Cases</a></li> 
+                        <li><a  class="dropdown-item" routerLink="rejectedcase">Rejected Cases</a></li> 
                         </ul>
                     </div>
                   </li>
                   <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" routerLink="#" id="navbardrop" data-toggle="dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbardrop" data-toggle="dropdown">
                         <i class="fa fa-check"></i> Document Export
                     </a>
                     <div class="dropdown-menu">
                      <ul>
-                        <li><a  class="dropdown-item" routerLink="#">Generate Excel</a></li>
+                        <li><a  class="dropdown-item" routerLink="generateexcel">Generate Excel</a></li>
                         </ul>
                     </div>
                   </li>
                   <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" routerLink="#" id="navbardrop" data-toggle="dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbardrop" data-toggle="dropdown">
                         <i class="fa fa-check"></i> Master Report
                     </a>
                     <div class="dropdown-menu">
                      <ul>
-                        <li><a  class="dropdown-item" routerLink="#">Master Export</a></li>
+                        <li><a  class="dropdown-item" routerLink="masterexport">Master Export</a></li>
                         </ul>
                     </div>
                   </li>
                   <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" routerLink="#" id="navbardrop" data-toggle="dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbardrop" data-toggle="dropdown">
                         <i class="fa fa-download"></i> Bulk Download PDF
                     </a>
                     <div class="dropdown-menu">
                      <ul>
-                        <li><a  class="dropdown-item" routerLink="#">Close Cases Download</a></li>
+                        <li><a  class="dropdown-item" routerLink="closecasesdownload">Close Cases Download</a></li>
                         </ul>
                     </div>
                   </li>
                   <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" routerLink="#" id="navbardrop" data-toggle="dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbardrop" data-toggle="dropdown">
                         <i class="fa fa-cog"></i> Account Setting
                     </a>
                     <div class="dropdown-menu">
                      <ul>
-                        <li><a  class="dropdown-item" routerLink="#">Change Password</a></li>
-                        <li><a  class="dropdown-item" routerLink="#">Logout</a></li>
+                        <li><a  class="dropdown-item" routerLink="changepassword">Change Password</a></li>
+                        <li><a  class="dropdown-item" routerLink="logout">Logout</a></li>
                         </ul>
                     </div>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" routerLink="#"><i class="fa fa-cog"></i> Case Trace</a>
+                    <a class="nav-link" routerLink="casetrace"><i class="fa fa-cog"></i> Case Trace</a>
                   </li>
                   <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" routerLink="#" id="navbardrop" data-toggle="dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbardrop" data-toggle="dropdown">
                         <i class="fa fa-cog"></i> Forms
                     </a>
                     <div class="dropdown-menu">
                      <ul>
-                        <li><a  class="dropdown-item" routerLink="#">PAN</a></li>
+                        <li><a  class="dropdown-item" routerLink="pan">PAN</a></li>
                         </ul>
                     </div>
                   </li>
