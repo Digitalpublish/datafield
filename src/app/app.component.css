@@ -1,0 +1,17 @@
+.col{
+    padding: 0 !important;
+}
+
+.col.col4{
+    padding: 0 !important;
+}
+
+.col.col4{
+    height: 100vh;
+    background: #101840;
+    max-width: 260px;
+}
+
+.col.col8{
+    background: #cccccc;
+}
