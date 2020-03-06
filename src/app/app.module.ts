@@ -22,6 +22,8 @@ import { MasterexportComponent } from './masterexport/masterexport.component';
 import { ClosecasedownloadComponent } from './closecasedownload/closecasedownload.component';
 import { CasetraceComponent } from './casetrace/casetrace.component';
 import { PanComponent } from './pan/pan.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -48,7 +50,10 @@ import { PanComponent } from './pan/pan.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

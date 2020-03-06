@@ -1,1 +1,258 @@
-<p>pan works!</p>
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <h3 class="mt-3 mb-3 text-center">New PAN Card Registration</h3>
+            <form [formGroup]="productform" novalidate class="form">
+                <fieldset>
+                    <legend>For Client:</legend>
+                <div class="row">
+                <div class="col">
+                <div class="form-group">
+                    <label for="client">Clients <span class="text-danger" *ngIf="productform.get('client').touched && productform.get('client').invalid">
+                            **
+                        </span></label>
+                        <select class="form-control" id="client" name="client" formControlName="client">
+                            <option value="">--Select Client--</option>
+                            <option value="Art Housing Finance (India) Limited">Art Housing Finance (India) Limited</option>         
+                            <option value="AU Small Finance Bank Limited">AU Small Finance Bank Limited</option>
+                            <option value="State Bank of India">State Bank of India</option>
+                            <option value="Ummeed Housing Finance Pvt. Ltd.">Ummeed Housing Finance Pvt. Ltd.</option>
+                        </select>
+                </div>
+            </div>
+            <div class="col">
+                <div class="form-group">
+                    <label for="product">Product <span class="text-danger" *ngIf="productform.get('product').touched && productform.get('product').invalid">
+                            **
+                        </span></label>
+                        <select id="product" name="product" class="form-control valid" aria-invalid="false"  formControlName="product">
+                            <option value="">--Select Product--</option>
+                            <option value="CASA">CASA</option>
+                            <option value="Small And  Medium Enterprise (SME)">Small And  Medium Enterprise (SME)</option>
+                            <option value="Two Wheeler Loan">Two Wheeler Loan</option>
+                            <option value="Auto Loan">Auto Loan</option>
+                            <option value="Business Loan">Business Loan</option>
+                            <option value="Education Loan">Education Loan</option>
+                            <option value="Mudra Loan">Mudra Loan</option>
+                            <option value="Pension Loan">Pension Loan</option>
+                            <option value="Personal Loan">Personal Loan</option>
+                            <option value="Pre Home Loan (PHL)">Pre Home Loan (PHL)</option>
+                        </select>
+                </div>
+            </div>
+                <div class="col">
+                <div class="form-group">
+                    <label for="mrp">PAN <span class="text-danger" *ngIf="productform.get('pan').touched && productform.get('pan').invalid">
+                            **
+                        </span></label>
+                    <input type="text" class="form-control" name="pan" id="pan" formControlName="pan" autocomplete="off">
+                </div>
+            </div>
+        </div>
+        </fieldset>
+        <fieldset>
+            <legend>For Production:</legend>
+        <div class="row">
+            <div class="col">
+                <div class="form-group">
+                        <label for="lighttype">Light Type <span class="text-danger" *ngIf="productform.get('lighttype').touched && productform.get('lighttype').invalid">
+                                -- not be blank
+                             </span></label>    
+                        <select class="form-control" id="lighttype" name="lighttype" formControlName="lighttype">
+                            <option value="NA">NA</option>         
+                            <option value="indoor">Indoor</option>
+                            <option value="outdoor">Outdoor</option>
+                            <option value="indoor and outdoor">Indoor & Outdoor</option>
+                                  </select>
+
+                   
+                </div>
+                </div>
+                <div class="col">
+                <div class="form-group">
+                    <label for="voltage">Input Voltage <span class="text-danger" *ngIf="productform.get('voltage').touched && productform.get('voltage').invalid">
+                            -- not be blank
+                        </span></label>
+                    <select class="form-control" name="voltage" formControlName="voltage" id="voltage">
+                        <option value="NA">NA</option> 
+                        <option value="90Vac-285Vac, 50Hz/60Hz">90Vac-285Vac, 50Hz/60Hz</option>    
+                        <!-- <option value="50Hz/60Hz">50Hz/60Hz</option> -->
+                    </select>
+                  
+                </div>
+                </div>
+                <div class="col">
+                <div class="form-group">
+                    <label for="wattage">Input Wattage <span class="text-danger" *ngIf="productform.get('wattage').touched && productform.get('wattage').invalid">
+                            -- not be blank
+                        </span></label>
+                    <select class="form-control" name="wattage" formControlName="wattage" id="wattage">
+                        <option value="0.5w">0.5W</option>    
+                            <option value="1w">1W</option>
+                            <option value="5w">5W</option>
+                            <option value="6w">6W</option>
+                            <option value="7w">7W</option>
+                            <option value="8w">8W</option>
+                            <option value="9w">9W</option>
+                            <option value="10w">10W</option>
+                            <option value="12w">12W</option>
+                            <option value="14w">14W</option>
+                            <option value="15w">15W</option>
+                            <option value="1w">18W</option>
+                            <option value="20w">20W</option>
+                            <option value="22w">22W</option>
+                            <option value="24w">24W</option>
+                            <option value="32w">32W</option>
+                            <option value="36w">36W</option>
+                            <option value="40w">40W</option>
+                            <option value="42w">42W</option>
+                            <option value="60w">60W</option>
+                            <option value="80w">80W</option>
+                            <option value="100w">100W</option>
+                            <option value="150w">150W</option>
+                          </select>
+                  
+                </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                <div class="form-group">
+                    <label for="basesize">Base Size <span class="text-danger" *ngIf="productform.get('basesize').touched && productform.get('basesize').invalid">
+                            -- not be blank
+                        </span></label>
+                    <select class="form-control" name="basesize" formControlName="basesize" id="basesize">
+                            <option value="NA">NA</option>    
+                            <option value="T8toG13">T8-G13</option>
+                            <option value="B22/E27">B22/E27</option>
+                            <option value="T5(Wall Mounting)">T5(Wall Mounting)</option>
+                            <option value="T8(Wall Mounting)">T8(Wall Mounting)</option>
+                          </select>
+                   
+                </div>
+                </div>
+                <div class="col">
+                <div class="form-group">
+                    <label for="efficacy">Efficacy <span class="text-danger" *ngIf="productform.get('efficacy').touched && productform.get('efficacy').invalid">
+                            -- not be blank
+                        </span></label>
+                    <select class="form-control" name="efficacy" formControlName="efficacy" id="efficacy">
+                        <option value="NA">NA</option>     
+                        <option value=">85lm/w">&gt;85lm/W</option>
+                                <option value=">85lm/w">&gt;95lm/W</option>
+                     </select>
+                   
+                </div>
+            </div>
+            <div class="col">
+                <div class="form-group">
+                    <label for="cri">CRI(Ra) <span class="text-danger" *ngIf="productform.get('cri').touched && productform.get('cri').invalid">
+                            -- not be blank
+                        </span></label>
+                    <select class="form-control" name="cri" formControlName="cri" id="cri">
+                        <option value="NA">NA</option>     
+                        <option value="80">80</option>
+                                <option value="85">85</option>
+                     </select>
+                    
+                </div>
+            </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                <div class="form-group">
+                    <label for="pf">PF <span class="text-danger" *ngIf="productform.get('pf').touched && productform.get('pf').invalid">
+                            -- not be blank
+                        </span></label>
+                    <select class="form-control" name="pf" formControlName="pf" id="pf">
+                        <option value="NA">NA</option>     
+                        <option value="0.95">0.95</option>
+                            <option value=">0.95">&gt;0.95</option>
+                    </select>
+                   
+                </div>
+                </div>
+                <div class="col">
+                <div class="form-group">
+                    <label for="angle">Beam Angle <span class="text-danger" *ngIf="productform.get('angle').touched && productform.get('angle').invalid">
+                            -- not be blank
+                        </span></label>
+                    <select class="form-control" name="angle" formControlName="angle" id="angle">
+                        <option value="NA">NA</option> 
+                            <option value="45">45deg</option>
+                            <option value="90">90deg</option>
+                            <option value="120">120deg</option>
+                            <option value=">120">&gt;120deg</option>
+                            <option value=">140">&gt;140deg</option>
+                            <option value=">270">&gt;270deg</option>
+                            <option value="45, 90 & 120">45, 90 & 120deg</option>
+                          </select>
+                   
+                </div>
+            </div>
+            <div class="col">
+                <div class="form-group">
+                    <label for="material">Material used <span class="text-danger" *ngIf="productform.get('material').touched && productform.get('material').invalid">
+                            -- not be blank
+                        </span></label>
+                    <select class="form-control" name="material" formControlName="material" id="material">
+                        <option value="NA">NA</option>
+                        <option value="ALPC">Pure Diecast AL + PC</option>
+                        <option value="AL Glass">Pure Diecast AL + Glass</option>
+                        <option value="PBT">PBT + Inside All</option>
+                        <option value="PC">PC</option>
+                      </select>
+                   
+                    
+                </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                <div class="form-group">
+                        <label for="scolors">Select Color <span class="text-danger" *ngIf="productform.get('scolors').touched && productform.get('scolors').invalid">
+                                -- not be blank
+                            </span></label>    
+                        <select class="form-control" name="scolors" formControlName="scolors" id="scolors">
+                                    <option value="red">Red</option>
+                                    <option value="green">Green</option>
+                                    <option value="blue">Blue</option>
+                                    <option value="white">White</option>   
+                                    <option value="Red, Green, Blue & White">Red, Green, Blue & White</option> 
+                                    <option value="cool white">Cool White(CW)</option>
+                                    <option value="warm white">Warm White (WW)</option>
+                                    <option value="neutral white">Neutral White(NW)</option>
+                                    <option value="cool white, warm white">Cool White(CW), Warm White (WW)</option>
+                                    <option value="cool white, warm white, Neutral White">Cool White(CW), Warm White (WW) & Neutral White(NW)</option>
+                        </select>
+                   
+                </div>
+                </div>
+                <div class="col">
+                    <div class="form-group">
+                    <label for="image">Upload Image</label>
+                    <!-- <input type="file" class="form-control0" [(ngModel)]="imagevalue" name="image" formControlName="image" (change)="fileupload($event)" observeFiles> -->
+                    <input type="text" hidden class="form-control" name="image" id="image"  formControlName="image" [(value)]="imagevalue">
+                    <!-- <button class="btn btn-primary" (click)="uploadimage()">Upload</button> -->
+                    <img class="mt-2" width="100px" src="../../assets/images/product/{{imagevalue}}" alt="">
+                </div>
+            </div>
+            <div class="col">
+                <label for="description">Application <span class="text-danger" *ngIf="productform.get('description').touched && productform.get('description').invalid">
+                    -- not be blank
+    </span></label>
+                <textarea rows="6"
+                formControlName="description" 
+                name="description" 
+                type="text" 
+                class="form-control"></textarea>
+            </div>
+        </div>
+    </fieldset>
+        <button class="btn btn-primary">Submit Product</button> &#160;&#160;&#160;      
+        <button class="btn btn-primary">Cancel</button>
+        
+        </form>
+        </div>
+    </div>
+</div>

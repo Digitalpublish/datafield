@@ -1,0 +1,30 @@
+.list-no-style{
+    list-style-type:none;
+}
+.col-4:last-child{
+    text-align: right;
+    padding-top: 10px;
+}
+
+.col-4 img{
+    width: 70%;;
+}
+
+.col-3 img{
+    width: 100%;;
+}
+
+form fieldset{
+    padding: 15px !important;
+    min-width: auto !important;
+    margin-bottom: 25px;
+    border: solid 1px #ffffff !important;
+}
+
+legend{
+    width:auto;
+    display: inline-block;
+    background: #cccccc;
+    padding: 5px 10px;
+
+}
